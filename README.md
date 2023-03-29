@@ -90,6 +90,7 @@ In an HTTP client like Postman, access the URL using the body to login.
 - URL: ``http://127.0.0.1:8000/api/auth/login``
 - User: (Any email from users table)
 - Password: ``password``
+- HTTP: POST
 
 ### Body example
 ``{
@@ -103,4 +104,8 @@ In an HTTP client like Postman, access the URL using the body to login.
 
 ## Searching User by ID
 - URL: ``http://127.0.0.1:8000/api/users/1``
+- HTTP: GET
+
+## API documentation 
+- URL: ``http://127.0.0.1:8000/api/documentation#/Users``
 - HTTP: GET
