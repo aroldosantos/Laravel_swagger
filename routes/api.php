@@ -21,5 +21,5 @@ Route::post('/auth/logout', [AuthController::class, 'logout']);
 
 Route::group(['middleware' => ['apijwt']], function () {
     Route::get('/users', [UserController::class, 'index']);
-    Route::get('/users/{id}', [UserController::class, 'show']);
+    Route::get('/users/{id}', [UserController::class, 'show'])->where('id', '[0-9]+');
 });
